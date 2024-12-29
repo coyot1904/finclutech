@@ -1,4 +1,5 @@
 import UIKit
+import Validator // Import the Validator library
 
 class LoginViewController: UIViewController {
     private let usernameField = UITextField()
@@ -19,7 +20,7 @@ class LoginViewController: UIViewController {
 
         usernameField.placeholder = "Username"
         usernameField.borderStyle = .roundedRect
-
+        
         passwordField.placeholder = "Password"
         passwordField.borderStyle = .roundedRect
         passwordField.isSecureTextEntry = true
@@ -47,6 +48,20 @@ class LoginViewController: UIViewController {
     }
 
     @objc private func handleLogin() {
+        // Validation
+        let usernameValidation = usernameField.text?.isEmpty ?? true
+        let passwordValidation = passwordField.text?.isEmpty ?? true
+
+        if usernameValidation {
+            errorLabel.text = "Username cannot be empty"
+            return
+        }
+
+        if passwordValidation {
+            errorLabel.text = "Password cannot be empty"
+            return
+        }
+
         if usernameField.text == validUsername && passwordField.text == validPassword {
             navigateToMainScreen()
         } else {

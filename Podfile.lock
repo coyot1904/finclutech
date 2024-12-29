@@ -1,0 +1,20 @@
+PODS:
+  - ReSwift (6.1.1)
+  - Validator (3.2.1)
+
+DEPENDENCIES:
+  - ReSwift
+  - Validator
+
+SPEC REPOS:
+  trunk:
+    - ReSwift
+    - Validator
+
+SPEC CHECKSUMS:
+  ReSwift: 929afd2c897f0d33c76c730710a31bb2d2a66713
+  Validator: 80a6f567220c962dfd2d9928ae98a8c1d164f6f4
+
+PODFILE CHECKSUM: 8cb5c1158f83ee9d29e59e1425f63471affee013
+
+COCOAPODS: 1.16.2

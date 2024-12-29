@@ -5,6 +5,7 @@
   },
   "services": [
     {
+      "type": "dropdown",
       "label": {
         "en": "Bank Transfer",
         "ar": "تحويل بنكي"
@@ -138,6 +139,7 @@
       ]
     },
     {
+      "type": "dropdown",
       "label": {
         "en": "Wallet Transfer",
         "ar": "تحويل محفظة"

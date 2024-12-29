@@ -6,11 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		49293CDAAB13A2F01E7FFF63 /* Pods_finclutech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE57E3FBDE60581907AADC2F /* Pods_finclutech.framework */; };
+		A6F461E72D213B8C0012EE6E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6F461E62D213B8A0012EE6E /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		0C791A0FCFDC35A7BAACA3B9 /* Pods-finclutech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finclutech.release.xcconfig"; path = "Target Support Files/Pods-finclutech/Pods-finclutech.release.xcconfig"; sourceTree = "<group>"; };
+		94CB46CED68148ACEC5F206D /* Pods-finclutech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finclutech.debug.xcconfig"; path = "Target Support Files/Pods-finclutech/Pods-finclutech.debug.xcconfig"; sourceTree = "<group>"; };
+		A6F461E62D213B8A0012EE6E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A6F7FED62D1DD68D00B4760E /* finclutech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finclutech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE57E3FBDE60581907AADC2F /* Pods_finclutech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_finclutech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		A6F461E82D213C3B0012EE6E /* screenshots */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = screenshots;
+			sourceTree = "<group>";
+		};
 		A6F7FED82D1DD68D00B4760E /* finclutech */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = finclutech;
@@ -23,17 +37,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49293CDAAB13A2F01E7FFF63 /* Pods_finclutech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C98C076B93CB8E0B215CA60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE57E3FBDE60581907AADC2F /* Pods_finclutech.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B4F6CE3BA08DEA1D51BB335 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94CB46CED68148ACEC5F206D /* Pods-finclutech.debug.xcconfig */,
+				0C791A0FCFDC35A7BAACA3B9 /* Pods-finclutech.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A6F7FECD2D1DD68D00B4760E = {
 			isa = PBXGroup;
 			children = (
-				A6F7FED82D1DD68D00B4760E /* finclutech */,
+				A6F461E82D213C3B0012EE6E /* screenshots */,
+				A6F461E62D213B8A0012EE6E /* README.md */,
 				A6F7FED72D1DD68D00B4760E /* Products */,
+				A6F7FED82D1DD68D00B4760E /* finclutech */,
+				2B4F6CE3BA08DEA1D51BB335 /* Pods */,
+				0C98C076B93CB8E0B215CA60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,20 +88,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6F7FEE42D1DD68E00B4760E /* Build configuration list for PBXNativeTarget "finclutech" */;
 			buildPhases = (
+				F281C152EA16CAAB69171D93 /* [CP] Check Pods Manifest.lock */,
 				A6F7FED22D1DD68D00B4760E /* Sources */,
 				A6F7FED32D1DD68D00B4760E /* Frameworks */,
 				A6F7FED42D1DD68D00B4760E /* Resources */,
+				AB0A17F89AD7A6FBD19A2519 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				A6F461E82D213C3B0012EE6E /* screenshots */,
 				A6F7FED82D1DD68D00B4760E /* finclutech */,
 			);
 			name = finclutech;
-			packageProductDependencies = (
-			);
 			productName = finclutech;
 			productReference = A6F7FED62D1DD68D00B4760E /* finclutech.app */;
 			productType = "com.apple.product-type.application";
@@ -109,10 +146,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F461E72D213B8C0012EE6E /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB0A17F89AD7A6FBD19A2519 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-finclutech/Pods-finclutech-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-finclutech/Pods-finclutech-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-finclutech/Pods-finclutech-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F281C152EA16CAAB69171D93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-finclutech-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6F7FED22D1DD68D00B4760E /* Sources */ = {
@@ -162,7 +242,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -225,7 +305,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -246,6 +326,7 @@
 		};
 		A6F7FEE52D1DD68E00B4760E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94CB46CED68148ACEC5F206D /* Pods-finclutech.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -259,6 +340,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -274,6 +356,7 @@
 		};
 		A6F7FEE62D1DD68E00B4760E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C791A0FCFDC35A7BAACA3B9 /* Pods-finclutech.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -287,6 +370,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

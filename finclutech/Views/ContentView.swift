@@ -1,24 +1,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var navigateToLogin = false
+    @State private var isLoading = false
+
     var body: some View {
         NavigationView {
             VStack {
-                Spacer() // Pushes the logo and button towards the center
-                Image("logo") // Replace "logo" with your actual image name
+                Spacer()
+                Image("logo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 330, height: 150) // Adjust the size as needed
+                    .frame(width: 330, height: 150)
                 Spacer()
                 
-                NavigationLink(destination: LoginView()) {
-                    Text("Login")
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
+                HStack {
+
+                ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .blue))
+                        .padding(.leading, 10)
+                    
                 }
                 .padding()
+                
+                NavigationLink(destination: LoginView(), isActive: $navigateToLogin) {
+                    EmptyView()
+                }
+                .hidden()
+            }
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    navigateToLogin = true
+                }
             }
         }
     }
