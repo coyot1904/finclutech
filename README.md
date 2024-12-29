@@ -2,13 +2,10 @@
 # Send Money App
 
 ## ScreenShots
-![Screenshot 1](./screenshots/1.png)
-![Screenshot 2](./screenshots/2.png)
-![Screenshot 2](./screenshots/3.png)
-![Screenshot 2](./screenshots/4.png)
-![Screenshot 2](./screenshots/5.png)
-![Screenshot 2](./screenshots/6.png)
-![Screenshot 2](./screenshots/7.png)
+| ![Screenshot 1](./screenshots/1.png) | ![Screenshot 2](./screenshots/2.png) | ![Screenshot 3](./screenshots/3.png) |
+|--------------------------------------|--------------------------------------|--------------------------------------|
+| ![Screenshot 4](./screenshots/4.png) | ![Screenshot 5](./screenshots/5.png) | ![Screenshot 6](./screenshots/6.png) |
+| ![Screenshot 7](./screenshots/7.png) |   
 
 ## Introduction
 The Send Money App allows users to transfer money using different providers with a dynamic form interface. The app supports multiple languages (English and Arabic) and provides users with the ability to select a provider and fill in the required details.
